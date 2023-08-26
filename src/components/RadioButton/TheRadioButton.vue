@@ -1,5 +1,5 @@
 <template>
-    <div class="group hover:cursor-pointer ">
+    <div class="radio-button-container group hover:cursor-pointer ">
         <input type="radio" @change="$emit('changeImage')" :id="item.id" class="hidden peer" :name="item.groupName"
             :checked="item.checked" />
         <label :for="item.id"

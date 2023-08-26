@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen min-h-screen overflow-y-auto overflow-x-hidden">
+    <section class="vertical-image-section w-screen min-h-screen overflow-y-auto overflow-x-hidden">
 
         <div class="flex flex-col justify-center items-center w-full ">
             <div class="top-container w-full lg:w-1/2 flex-grow p-4 lg:p-8 lg:text-center">
@@ -17,7 +17,7 @@
         </div>
 
 
-    </div>
+    </section>
 </template>
 
 <script setup>

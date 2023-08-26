@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen overflow-y-auto overflow-x-hidden">
+    <section class="horizontal-section w-screen overflow-y-auto overflow-x-hidden">
 
         <div :class="reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'"
             class="flex flex-col justify-center items-center w-full">
@@ -28,7 +28,7 @@
         </div>
 
 
-    </div>
+    </section>
 </template>
 
 <script setup>

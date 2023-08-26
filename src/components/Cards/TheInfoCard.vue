@@ -1,5 +1,5 @@
 <template>
-    <div class="card-container shadow-md rounded-md w-full xl:w-1/3">
+    <div class="info-card-container shadow-md rounded-md w-full xl:w-1/3">
         <div class="inline-flex justify-start items-start p-4">
             <div class="icon-container w-8 h-8 m-0 flex justify-center items-center bg-green-100 rounded-full p-1">
                 <i :class="props.icon" class="text-green-500 text-2xl"></i>

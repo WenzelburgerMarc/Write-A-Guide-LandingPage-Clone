@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col justify-center sm:items-center w-full min-h-[75vh]">
+    <section class="hero flex flex-col justify-center sm:items-center w-full min-h-[75vh]">
 
         <h2 class="w-auto tracking-wider font-medium text-[2.5rem] sm:text-[2.75rem] leading-snug"><span
                 class="relative"><span
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-    </div>
+    </section>
 </template>
 <script setup>
 
