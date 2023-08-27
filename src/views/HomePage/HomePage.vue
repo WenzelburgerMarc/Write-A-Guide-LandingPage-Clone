@@ -1,7 +1,7 @@
 <template>
     <div class="w-screen overflow-y-auto overflow-x-hidden ">
         <div class="hero-section w-screen flex sm:justify-center items-center sm:text-center ">
-            <the-hero class="m-4 md:m-8 lg:m-12" />
+            <the-hero class="m-4 md:m-8 lg:m-12 no-bottom-margin" />
         </div>
 
 
@@ -96,4 +96,8 @@ import {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.no-bottom-margin {
+    margin-bottom: 0 !important;
+}
+</style>

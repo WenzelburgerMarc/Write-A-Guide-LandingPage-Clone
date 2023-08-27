@@ -1,6 +1,7 @@
 <template>
     <div>
-        <div class="fixed top-0 left-0 w-screen h-16 bg-gray-400 overflow-hidden flex items-center z-50">
+        <div :class="isOnTop ? '' : 'shadow'"
+            class="navbar fixed top-0 left-0 w-screen h-16 bg-white flex items-center overflow-visible">
             <the-nav-bar />
         </div>
         <div class="mt-16">
@@ -9,7 +10,28 @@
     </div>
 </template>
 <script setup>
+import { ref, onBeforeUnmount } from 'vue';
 import TheNavBar from '@/components/NavBar/TheNavBar.vue';
 
+let isOnTop = ref(true);
+
+let scrollListener = window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+        isOnTop.value = false;
+    } else {
+        isOnTop.value = true;
+    }
+});
+
+
+
+onBeforeUnmount(() => {
+    scrollListener.removeEventListener();
+});
+
 </script>
-<style setup></style>
+<style setup>
+.navbar {
+    z-index: 1000;
+}
+</style>
