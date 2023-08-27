@@ -66,7 +66,9 @@
             description="Mit Schnittstellen zu beliebten Anwendungen kannst du writeaguide ganz unkompliziert in deine Arbeitswelt integrieren."
             imageSRC="/src/assets/integrations.svg" />
 
-            
+        <the-pricing-cards-section class="p-8 lg:p-12 flex justify-center items-start min-h-screen" sectionTitle="Preise"
+            titleMarked="Digitalisiere" title=" dein Wissen"
+            description="Teste writeaguide 60 Tage kostenlos. Im Anschluss kannst du dich für einen passenden Plan entscheiden und jederzeit kündigen." />
 
         <the-fixed-button class="fixed bottom-8 right-4" icon="bx-chat" />
     </div>
@@ -79,6 +81,7 @@ import TheHorizontalSection from '@/components/RadioButton/RadioButtonHorizontal
 import TheVerticalSection from '@/components/RadioButton/RadioButtonVerticalSection/TheVerticalSection.vue';
 import TheVerticalImageSection from '@/components/TheVerticalImageSection.vue';
 import TheVerticalCardsSection from '@/components/TheVerticalCardsSection.vue';
+import ThePricingCardsSection from '@/components/ThePricingCardsSection.vue';
 import TheFixedButton from '@/components/TheFixedButton.vue';
 
 import {
