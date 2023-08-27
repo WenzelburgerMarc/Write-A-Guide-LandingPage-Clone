@@ -28,7 +28,7 @@
 
         <the-mobile-nav-bar v-on:closeMobileNav="closeMobileNav"
             :class="isMobileActive ? 'mobile-active' : 'mobile-not-active'"
-            class="mobile-navbar-container fixed lg:hidden w-screen h-screen top-0 left-0 p-4" />
+            class="mobile-navbar-container fixed lg:hidden w-screen h-screen top-0 left-0 p-4 overflow-hidden" />
 
 
     </nav>
@@ -57,6 +57,7 @@ function closeMobileNav() {
 }
 
 .mobile-not-active {
+
     transform: translateY(-100%);
 }
 

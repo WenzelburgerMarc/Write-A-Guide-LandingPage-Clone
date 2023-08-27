@@ -89,11 +89,6 @@ import {
     verticalCardItems
 } from './data.js';
 
-// Props also in Data + DefaultLayout for Gaps + Gaps between sections anpassen
-
-
-
-
 </script>
 
 <style scoped>
