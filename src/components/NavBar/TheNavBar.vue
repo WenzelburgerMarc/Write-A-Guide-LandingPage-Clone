@@ -5,20 +5,18 @@
                 class="bg-contain h-full max-h-full w-auto ml-4 flex-shrink-0" />
 
         </a>
-        <div class="nav-item-container hidden lg:flex w-full h-full justify-end items-center gap-4 mr-5">
-            <nav-drop-down-item title="Funktionen" :items="itemsFunktionen" />
-
-            <nav-drop-down-item title="Lösungen" :items="itemsLoesungen" />
-
-            <nav-item link="#" text="Anmelden" />
-
-            <nav-drop-down-item title="Ressourcen" :items="itemsRessourcen" />
-
-            <nav-item link="#" text="Preise" />
-
-            <nav-button-item text="Kostenlos Testen" link="#" />
+        <div class="nav-item-container hidden lg:flex w-full h-full justify-end items-center gap-8 mr-5">
+            <nav-drop-down-item :title="functionsDropdownItemData.title"
+                :items="functionsDropdownItemData.itemsFunktionen" />
+            <nav-drop-down-item :title="solutionsDropdownItemData.title"
+                :items="solutionsDropdownItemData.itemsLoesungen" />
+            <nav-item :link="priceNavItemData.link" :text="priceNavItemData.title" />
+            <nav-drop-down-item :title="resourcesDropdownItemData.title"
+                :items="resourcesDropdownItemData.itemsRessourcen" />
+            <nav-item :link="signInNavItemData.link" :text="signInNavItemData.title" />
+            <nav-button-item :text="tryForFreeButtonNavItemData.title" :link="tryForFreeButtonNavItemData.link" />
         </div>
-        <div class="flex lg:hidden w-full h-full justify-end items-center gap-4 mr-5 pointer-events-none">
+        <div class="flex lg:hidden w-full h-full justify-end items-center gap-5 mr-5 pointer-events-none">
             <i class="icon bx bx-log-in text-2xl text-gray-700 hover:text-black cursor-pointer pointer-events-auto"></i>
             <i @click="isMobileActive = true"
                 class="icon bx bx-menu text-2xl text-gray-700 hover:text-black cursor-pointer pointer-events-auto"></i>
@@ -40,7 +38,7 @@ import NavButtonItem from './Items/NavButtonItem.vue';
 import NavDropDownItem from './Items/NavDropDownItem.vue';
 import TheMobileNavBar from './TheMobileNavBar.vue';
 
-import { itemsFunktionen, itemsLoesungen, itemsRessourcen } from './data.js';
+import { functionsDropdownItemData, solutionsDropdownItemData, resourcesDropdownItemData, priceNavItemData, signInNavItemData, tryForFreeButtonNavItemData } from './data.js';
 
 let isMobileActive = ref(false);
 

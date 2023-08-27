@@ -1,5 +1,5 @@
 <template>
-    <a :href="link" class="text-sm text-gray-500 hover:text-black">
+    <a :href="link" class="text-sm font-medium text-gray-500 hover:text-black">
         {{ props.text }}
     </a>
 </template>

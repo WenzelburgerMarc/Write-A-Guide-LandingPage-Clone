@@ -1,6 +1,6 @@
 <template>
     <a :href="link"
-        class="primary-btn w-auto py-1.5 px-5 text-white bg-green-500 hover:bg-green-600 cursor-pointer rounded-full text-center text-sm font-normal">
+        class="primary-btn w-auto py-1.5 px-5 text-white bg-green-500 hover:bg-green-600 cursor-pointer rounded-full text-center text-sm font-medium">
         {{ props.text }}
     </a>
 </template>

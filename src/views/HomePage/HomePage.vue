@@ -66,6 +66,8 @@
             description="Mit Schnittstellen zu beliebten Anwendungen kannst du writeaguide ganz unkompliziert in deine Arbeitswelt integrieren."
             imageSRC="/src/assets/integrations.svg" />
 
+            
+
         <the-fixed-button class="fixed bottom-8 right-4" icon="bx-chat" />
     </div>
 </template>

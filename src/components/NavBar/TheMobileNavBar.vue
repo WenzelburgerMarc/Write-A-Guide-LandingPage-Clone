@@ -11,16 +11,20 @@
             </div>
         </div>
         <div class="w-full h-full flex flex-col justify-start pt-[10%] gap-3 pb-5 overflow-auto">
-            <mobile-nav-drop-down-item title="Funktionen" :items="itemsFunktionen" />
+            <mobile-nav-drop-down-item :title="functionsDropdownItemData.title"
+                :items="functionsDropdownItemData.itemsFunktionen" />
 
-            <mobile-nav-drop-down-item title="Lösungen" :items="itemsLoesungen" />
-            <mobile-nav-item link="#" text="Preise" />
-            <mobile-nav-drop-down-item title="Ressourcen" :items="itemsRessourcen" />
+            <mobile-nav-drop-down-item :title="solutionsDropdownItemData.title"
+                :items="solutionsDropdownItemData.itemsLoesungen" />
+            <mobile-nav-item :link="priceNavItemData.link" :text="priceNavItemData.title" />
+            <mobile-nav-drop-down-item :title="resourcesDropdownItemData.title"
+                :items="resourcesDropdownItemData.itemsRessourcen" />
 
-            <mobile-nav-item link="#" text="Anmelden" />
+            <mobile-nav-item :link="signInNavItemData.link" :text="signInNavItemData.title" />
 
-            <mobile-nav-button-item text="Kostenlos Testen" link="#" class="mt-5" />
-            <mobile-nav-secondary-button-item text="Persönliche Beratung" link="#" />
+            <mobile-nav-button-item :text="tryForFreeButtonNavItemData.title" :link="tryForFreeButtonNavItemData.link"
+                class="mt-5" />
+            <mobile-nav-secondary-button-item :text="adviseSecBtnNavItemData.title" :link="adviseSecBtnNavItemData.link" />
         </div>
 
 
@@ -33,7 +37,7 @@ import MobileNavButtonItem from './Items/mobile/MobileNavButtonItem.vue';
 import MobileNavDropDownItem from './Items/mobile/MobileNavDropDownItem.vue';
 import MobileNavSecondaryButtonItem from './Items/mobile/MobileNavSecondaryButtonItem.vue';
 
-import { itemsFunktionen, itemsLoesungen, itemsRessourcen } from './data.js';
+import { functionsDropdownItemData, solutionsDropdownItemData, resourcesDropdownItemData, priceNavItemData, signInNavItemData, tryForFreeButtonNavItemData, adviseSecBtnNavItemData } from './data.js';
 
 const emit = defineEmits(['closeMobileNav']);
 

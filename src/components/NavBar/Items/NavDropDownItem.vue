@@ -1,6 +1,6 @@
 <template>
     <div @mouseenter="isOpen = true" @mouseleave="isOpen = false"
-        class="relative h-full text-sm text-gray-500 hover:text-black cursor-pointer">
+        class="relative h-full text-sm font-medium text-gray-500 hover:text-black cursor-pointer">
         <div class="flex justify-center items-center gap-0 h-full">
             <span>
                 {{ props.title }}
