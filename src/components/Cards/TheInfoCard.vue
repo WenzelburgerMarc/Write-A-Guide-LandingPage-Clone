@@ -11,12 +11,10 @@
                 <div class="flex items-end mt-5">
                     <h1 class="text-5xl">{{ props.improvementForUser[0] }}</h1>
                     <h2 class="text-2xl mx-3"> {{ props.improvementForUser[1] }} </h2>
-                    <h2 class="relative w-auto tracking-wider text-xs font-light text-green-500 m-2"><span
-                            class="relative p-2 w-full">
-                            <span
-                                class="highlighter absolute left-[-0.5rem] top-0 w-[calc(100%+1rem)] overflow-hidden h-full  rounded-full bg-green-500 opacity-10 -z-10"></span>{{
-                                    props.improvementForUser[2] }}
-                        </span>
+                    <h2 class=" rounded-3xl py-2 px-3 text-xs text-green-500 bg-green-100">
+                        {{
+                            props.improvementForUser[2] }}
+
                     </h2>
                 </div>
 
