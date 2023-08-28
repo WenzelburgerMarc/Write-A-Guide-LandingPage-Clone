@@ -1,18 +1,35 @@
 <template>
     <section class="pricing-cards-section relative bg-transparent">
         <div class="absolute top-0 left-0 w-full h-full bg-gray-100 -skew-y-6 -z-10"></div>
-        <div class="top-container w-full md:w-1/2 lg:w-2/3 p-4 lg:p-8 mt-12 md:text-center">
-            <span class="uppercase text-green-500 text-sm sm:text-sm mb-3 inline-block">{{ sectionTitle }}</span>
-            <h2 class="w-auto tracking-wider text-3xl"><span class="relative"><span
-                        class="highlighter absolute left-[-0.25rem] top-4 w-[calc(100%+0.5rem)] h-3/4 rounded-full bg-green-500 opacity-10 -z-10"></span>{{
-                            titleMarked }}</span>{{ title }}</h2>
-            <p class="text-xl font-light text-gray-700 mt-5 mx-auto">{{ description }}</p>
+        <default-padding>
+            <div class="top-container w-full md:w-1/2 lg:w-2/3 p-4 lg:p-8 mt-12 md:text-center flex flex-col">
+                <span class="uppercase text-green-500 text-sm sm:text-sm mb-3 inline-block">{{ sectionTitle }}</span>
+                <h2 class="w-auto tracking-wider text-3xl"><span class="relative"><span
+                            class="highlighter absolute left-[-0.25rem] top-4 w-[calc(100%+0.5rem)] h-3/4 rounded-full bg-green-500 opacity-10 -z-10"></span>{{
+                                titleMarked }}</span>{{ title }}</h2>
+                <p class="text-xl font-light text-gray-700 mt-5 mx-auto lg:w-2/3">{{ description }}</p>
 
-        </div>
+                <the-toggle-button v-on:toggleEvent="changePrice" class="mt-10 mx-auto" firstTitle="Monatlich"
+                    secondTitle="Jährlich" :toggleValue="true" />
+
+                <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 mt-10">
+                    <the-price-card class="w-full h-full" :price="firstPriceCard.price" :title="firstPriceCard.title"
+                        :description="firstPriceCard.description" :features="firstPriceCard.features"
+                        :link="firstPriceCard.link" />
+
+                    <the-price-card class="w-full h-full" :price="secondPriceCard.price" :title="secondPriceCard.title"
+                        :description="secondPriceCard.description" :features="secondPriceCard.features"
+                        :link="secondPriceCard.link" />
+                </div>
+            </div>
+        </default-padding>
     </section>
 </template>
 <script setup>
-
+import { reactive } from 'vue';
+import DefaultPadding from '../layouts/DefaultPadding.vue';
+import TheToggleButton from '@/components/TheToggleButton.vue';
+import ThePriceCard from './Cards/ThePriceCard.vue';
 const props = defineProps({
     sectionTitle: {
         type: String,
@@ -32,6 +49,32 @@ const props = defineProps({
     },
 
 });
+
+const firstPriceCard = reactive({
+    price: "6 €",
+    title: "Premium",
+    description: 'Für kleine Unternehmen',
+    features: ['Unbegrenzte Guides', 'Individuelle Teamberechtigungen', 'Detaillierte Wissensanalyse', 'Gamification für Mehr Motivation', 'Teambasierte Integrationen'],
+    link: 'https://writeaguide.com/de/pricing'
+});
+
+const secondPriceCard = reactive({
+    price: "8 €",
+    title: "Enterprise",
+    description: 'Für große Unternehmen',
+    features: ['Alle Funktionen aus Premium', 'Optimiere das Wissen mit Workflows', 'Finde Experten mit den Spezialisierungen', 'Zertifikate für Mitglieder', 'Exportiere Guides'],
+    link: 'https://writeaguide.com/de/pricing'
+});
+
+const priceSmallCompanys = [6, 7];
+const priceHugeCompanys = [8, 9];
+
+
+function changePrice(index) {
+    firstPriceCard.price = `${priceSmallCompanys[index]} €`;
+    secondPriceCard.price = `${priceHugeCompanys[index]} €`;
+
+}
 
 </script>
 <style scoped></style>
