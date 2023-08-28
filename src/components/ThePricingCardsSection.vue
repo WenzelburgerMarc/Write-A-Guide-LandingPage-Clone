@@ -21,15 +21,29 @@
                         :description="secondPriceCard.description" :features="secondPriceCard.features"
                         :link="secondPriceCard.link" />
                 </div>
+
+                <div class="bottom pt-10 flex flex-col justify-center items-center text-center">
+                    <nav-button-item text="60 Tage kostenlos testen" link="https://writeaguide.com/de/signup"
+                        class="py-5 text-sm max-w-fit" />
+                    <p class="mt-14 text-gray-500 text-xs">19 % MwSt exklusive. 60 Tage Testzeitraum mit allen Funktionen.
+                        Du
+                        benötigst noch kein Zahlungsmittel.</p>
+                    <a class="mt-1 text-green-500 text-xs hover:underline" href="hello@writeaguide.com">Mehr als 250
+                        Benutzer?
+                        Dann
+                        kontaktiere uns für ein individuelles
+                        Angebot.</a>
+                </div>
             </div>
         </default-padding>
     </section>
 </template>
 <script setup>
-import { reactive } from 'vue';
 import DefaultPadding from '../layouts/DefaultPadding.vue';
 import TheToggleButton from '@/components/TheToggleButton.vue';
 import ThePriceCard from './Cards/ThePriceCard.vue';
+import { firstPriceCard, secondPriceCard, priceSmallCompanys, priceHugeCompanys } from '@/views/HomePage/data.js';
+import NavButtonItem from './NavBar/Items/NavButtonItem.vue';
 const props = defineProps({
     sectionTitle: {
         type: String,
@@ -49,9 +63,6 @@ const props = defineProps({
     },
 
 });
-
-import { firstPriceCard, secondPriceCard, priceSmallCompanys, priceHugeCompanys } from '@/views/HomePage/data.js';
-
 
 
 function changePrice(index) {
