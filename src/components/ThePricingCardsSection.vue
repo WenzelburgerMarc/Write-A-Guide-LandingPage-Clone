@@ -50,24 +50,8 @@ const props = defineProps({
 
 });
 
-const firstPriceCard = reactive({
-    price: "6 €",
-    title: "Premium",
-    description: 'Für kleine Unternehmen',
-    features: ['Unbegrenzte Guides', 'Individuelle Teamberechtigungen', 'Detaillierte Wissensanalyse', 'Gamification für Mehr Motivation', 'Teambasierte Integrationen'],
-    link: 'https://writeaguide.com/de/pricing'
-});
+import { firstPriceCard, secondPriceCard, priceSmallCompanys, priceHugeCompanys } from '@/views/HomePage/data.js';
 
-const secondPriceCard = reactive({
-    price: "8 €",
-    title: "Enterprise",
-    description: 'Für große Unternehmen',
-    features: ['Alle Funktionen aus Premium', 'Optimiere das Wissen mit Workflows', 'Finde Experten mit den Spezialisierungen', 'Zertifikate für Mitglieder', 'Exportiere Guides'],
-    link: 'https://writeaguide.com/de/pricing'
-});
-
-const priceSmallCompanys = [6, 7];
-const priceHugeCompanys = [8, 9];
 
 
 function changePrice(index) {

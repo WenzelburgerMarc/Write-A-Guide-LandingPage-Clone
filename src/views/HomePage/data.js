@@ -168,3 +168,35 @@ export const verticalCardItems = ref([
       "Greife von überall auf dein Wissen zu. Sicher gespeichert auf deutschen Servern.",
   },
 ]);
+
+export const firstPriceCard = reactive({
+  price: "6 €",
+  title: "Premium",
+  description: "Für kleine Unternehmen",
+  features: [
+    "Unbegrenzte Guides",
+    "Individuelle Teamberechtigungen",
+    "Detaillierte Wissensanalyse",
+    "Gamification für Mehr Motivation",
+    "Teambasierte Integrationen",
+  ],
+  link: "https://writeaguide.com/de/pricing",
+});
+
+export const secondPriceCard = reactive({
+  price: "8 €",
+  title: "Enterprise",
+  description: "Für große Unternehmen",
+  features: [
+    "Alle Funktionen aus Premium",
+    "Optimiere das Wissen mit Workflows",
+    "Finde Experten mit den Spezialisierungen",
+    "Zertifikate für Mitglieder",
+    "Exportiere Guides",
+  ],
+  link: "https://writeaguide.com/de/pricing",
+});
+
+// Do Not Change Count of Elements in Array
+export const priceSmallCompanys = [6, 7]; // Monthly / Yearly
+export const priceHugeCompanys = [8, 9];
