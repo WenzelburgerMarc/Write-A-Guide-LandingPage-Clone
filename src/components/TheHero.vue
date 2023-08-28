@@ -1,8 +1,9 @@
 <template>
     <section class="hero flex flex-col justify-center sm:items-center w-full min-h-[60vh]">
 
-        <h2 class="w-auto tracking-wider font-medium text-[2.5rem] sm:text-[2.75rem] md:text-5xl leading-snug"><span
-                class="relative"><span
+        <h2
+            class="w-auto tracking-wider text-gray-700 font-medium text-[2.5rem] sm:text-[2.75rem] md:text-5xl leading-snug ">
+            <span class="relative "><span
                     class="highlighter absolute left-[-0.25rem] top-6 w-[calc(100%+0.5rem)] h-3/4 rounded-full bg-green-500 opacity-10 -z-10"></span>Das
                 Wissen</span> deiner Teams <br class="hidden sm:inline-block" /> an einem Platz
         </h2>
