@@ -28,7 +28,7 @@
                     <p class="mt-14 text-gray-500 text-xs">19 % MwSt exklusive. 60 Tage Testzeitraum mit allen Funktionen.
                         Du
                         benötigst noch kein Zahlungsmittel.</p>
-                    <a class="mt-1 text-green-500 text-xs hover:underline" href="hello@writeaguide.com">Mehr als 250
+                    <a class="mt-1 text-green-500 text-xs hover:underline" href="mailto:hello@writeaguide.com">Mehr als 250
                         Benutzer?
                         Dann
                         kontaktiere uns für ein individuelles
