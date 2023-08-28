@@ -1,6 +1,6 @@
 <template>
-    <a :href="link"
-        class="primary-btn w-auto py-1.5 px-5 text-white bg-green-500 hover:bg-green-600 cursor-pointer rounded-full text-center text-sm font-normal">
+    <a :href="link" :class="props.styling"
+        class="primary-btn w-auto cursor-pointer rounded-full text-center text-sm font-medium">
         {{ props.text }}
     </a>
 </template>
@@ -14,6 +14,10 @@ const props = defineProps({
     link: {
         type: String,
         required: true
+    },
+    styling: {
+        type: String,
+        required: false,
     }
 })
 

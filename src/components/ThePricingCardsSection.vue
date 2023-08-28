@@ -22,7 +22,7 @@
                         :link="secondPriceCard.link" />
                 </div>
 
-                <div class="bottom pt-10 flex flex-col justify-center items-center text-center">
+                <div class="bottom pt-10 pb-10 flex flex-col justify-center items-center text-center">
                     <nav-button-item text="60 Tage kostenlos testen" link="https://writeaguide.com/de/signup"
                         class="py-5 text-sm max-w-fit" />
                     <p class="mt-14 text-gray-500 text-xs">19 % MwSt exklusive. 60 Tage Testzeitraum mit allen Funktionen.
