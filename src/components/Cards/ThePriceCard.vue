@@ -13,9 +13,10 @@
         <div class="divider w-full h-[1px] rounded-full bg-gray-100"></div>
 
         <h2>Top-Funktionen</h2>
-        <div class="flex flex-col justify-start items-start gap-3">
-            <div class="flex justify-start items-center text-start gap-2" v-for="item in features">
-                <i class="bx bx-check text-green-500 bg-green-200 h-full p-1 rounded-full"></i>
+        <div class="flex flex-col justify-start items-start text-start gap-3">
+            <div class="flex flex-shrink-0 justify-center items-center gap-2" v-for="item in features">
+                <i
+                    class="bx flex-shrink-0 bx-check text-green-500 bg-green-200 rounded-full text-xl w-8 h-8 text-center flex justify-center items-center"></i>
                 <span class="font-light text-xs">{{ item }}</span>
             </div>
         </div>
