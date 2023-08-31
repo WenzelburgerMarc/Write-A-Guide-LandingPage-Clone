@@ -1,5 +1,5 @@
 <template>
-    <section class="vertical-section w-screen min-h-screen overflow-y-auto overflow-x-hidden">
+    <section class="vertical-section w-screen overflow-y-auto overflow-x-hidden">
 
         <div class="flex flex-col justify-center items-center w-full ">
             <div class="top-container w-full lg:w-1/2 flex-grow  lg:text-center">

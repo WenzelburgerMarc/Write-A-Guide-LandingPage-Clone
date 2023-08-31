@@ -8,10 +8,11 @@
                 <h2 class="text-xl font-normal">Beginne gleich kostenlos mit deinem smarten Wissensmanagement.</h2>
                 <div class="flex mt-10 gap-4 justify-center items-center flex-col sm:flex-row flex-nowrap">
                     <the-primary-button link="https://writeaguide.com/de/signup" text="60 Tage kostenlos testen"
-                        styling="bg-white text-green-500 py-4 px-12" />
+                        styling="bg-white text-green-500 py-4 px-12 whitespace-nowrap " />
                     <the-primary-button link="https://calendly.com/writeaguide/meeting-30" text="Persönliche Beratung"
-                        styling="text-white md:border-white sm:border-2 py-4 px-12" />
+                        styling="text-white md:border-white sm:border-2 py-4 px-12 whitespace-nowrap" />
                 </div>
+
 
             </div>
         </default-padding>
