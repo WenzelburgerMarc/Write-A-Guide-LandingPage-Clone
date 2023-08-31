@@ -1,8 +1,8 @@
 <template>
     <section class="pricing-cards-section relative bg-transparent">
-        <div class="absolute top-0 left-0 w-full h-full bg-gray-100 -skew-y-6 -z-10"></div>
+        <div class="absolute  top-0 left-0 w-full h-full bg-gray-500 -skew-y-6 z-10"></div>
         <default-padding>
-            <div class="top-container w-full md:w-1/2 lg:w-2/3 p-4 lg:p-8 mt-12 md:text-center flex flex-col">
+            <div class="top-container z-20 w-full md:w-1/2 lg:w-2/3 p-4 lg:p-8 mt-12 md:text-center flex flex-col">
                 <span class="uppercase text-green-500 text-sm sm:text-sm mb-3 inline-block">{{ sectionTitle }}</span>
                 <h2 class="w-auto tracking-wider text-3xl"><span class="relative"><span
                             class="highlighter absolute left-[-0.25rem] top-4 w-[calc(100%+0.5rem)] h-3/4 rounded-full bg-green-500 opacity-10 -z-10"></span>{{

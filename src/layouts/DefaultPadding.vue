@@ -1,5 +1,5 @@
 <template>
-    <div class="p-2 sm:p-4 md:p-8 lg:p-12 w-auto h-auto flex justify-center items-center">
+    <div class="p-2 sm:p-4 md:p-8 lg:p-12 w-auto h-auto flex justify-center items-center overflow-visible">
         <slot></slot>
     </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div :class="isOnTop ? '' : 'shadow'"
-            class="navbar fixed top-0 left-0 w-screen h-16 bg-white flex items-center overflow-visible">
+            class="navbar fixed top-0 left-0 w-screen h-16 bg-white flex items-center overflow-hidden">
             <the-nav-bar />
         </div>
         <div class="mt-16">

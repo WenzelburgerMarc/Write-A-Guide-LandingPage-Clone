@@ -1,6 +1,6 @@
 <template>
-    <div class="w-screen overflow-hidden ">
-        <div class="hero-section w-screen flex sm:justify-center items-center sm:text-center ">
+    <div class="w-screen overflow-hidden">
+        <div class="hero-section w-screen flex sm:justify-center items-center sm:text-center overflow-hidden">
             <default-padding>
                 <the-hero class=" no-bottom-margin" />
             </default-padding>
@@ -8,7 +8,7 @@
 
         <default-padding>
             <div class="flex justify-center items-center">
-                <img src="@/assets/writeaguide-cover.jpg" class="mb-16  w-full h-auto bg-cover bg-center rounded-md" />
+                <img :src="coverImage" class="mb-16  w-full h-auto bg-cover bg-center rounded-md" />
             </div>
         </default-padding>
 
@@ -68,7 +68,7 @@
             <the-vertical-image-section class="flex justify-center items-center" sectionTitle="Gamification"
                 titleMarked="Motiviere" title=" dein Team"
                 description="Unser Gamification-System regt zum Erstellen und Konsumieren von Wissen an. Das steigert den Wissensaustausch im Team."
-                imageSRC="src/assets/gamification.svg" />
+                :imageSRC="gamificationImage" />
         </default-padding>
 
         <default-padding>
@@ -82,11 +82,11 @@
             <the-vertical-image-section class="flex justify-center items-center" sectionTitle="Integrationen"
                 titleMarked="Kompatibel" title=" mit deinen Tools"
                 description="Mit Schnittstellen zu beliebten Anwendungen kannst du writeaguide ganz unkompliziert in deine Arbeitswelt integrieren."
-                imageSRC="src/assets/integrations.svg" />
+                :imageSRC="integrationImage" />
         </default-padding>
 
-        <the-pricing-cards-section class="flex justify-center items-start min-h-screen" sectionTitle="Preise"
-            titleMarked="Digitalisiere" title=" dein Wissen"
+        <the-pricing-cards-section class="flex justify-center items-start" sectionTitle="Preise" titleMarked="Digitalisiere"
+            title=" dein Wissen"
             description="Teste writeaguide 60 Tage kostenlos. Im Anschluss kannst du dich für einen passenden Plan entscheiden und jederzeit kündigen." />
 
         <the-start-now-section />
@@ -100,7 +100,7 @@
 </template>
 
 <script setup>
-import DefaultPadding from '../../layouts/DefaultPadding.vue';
+import DefaultPadding from '@/layouts/DefaultPadding.vue';
 import TheHero from '@/components/TheHero.vue';
 import TheInfoCard from '@/components/Cards/TheInfoCard.vue';
 import TheHorizontalSection from '@/components/RadioButton/RadioButtonHorizontalSection/TheHorizontalSection.vue';
@@ -108,9 +108,13 @@ import TheVerticalSection from '@/components/RadioButton/RadioButtonVerticalSect
 import TheVerticalImageSection from '@/components/TheVerticalImageSection.vue';
 import TheVerticalCardsSection from '@/components/TheVerticalCardsSection.vue';
 import ThePricingCardsSection from '@/components/ThePricingCardsSection.vue';
-import TheStartNowSection from '../../components/TheStartNowSection.vue';
+import TheStartNowSection from '@/components/TheStartNowSection.vue';
 import TheFooter from '@/components/TheFooter.vue';
 import TheFixedButton from '@/components/TheFixedButton.vue';
+
+import coverImage from '@/assets/writeaguide-cover.jpg';
+import integrationImage from '@/assets/integrations.svg';
+import gamificationImage from '@/assets/gamification.svg';
 
 import {
     infoCardItems,
