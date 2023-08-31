@@ -3,7 +3,7 @@ Cloned Landing Page: https://www.marcwenzelburger.com/writeaguide
 
 # Todo: 
 ### Overflow Visible for Absolute Marked Text
-### Images to big in rbSections
+### Images are too big in rbSections
 ### Cookies missing
 ### Refactoring props + layouts
 ### Data.js for props
