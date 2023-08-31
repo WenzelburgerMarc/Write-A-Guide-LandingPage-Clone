@@ -92,7 +92,7 @@
         <the-start-now-section />
 
 
-        <the-footer class="mt-14 py-14 px-4 md:px-8 lg:px-12" />
+        <the-footer class="py-14 px-4 md:px-8 lg:px-12" />
 
 
         <the-fixed-button class="fixed bottom-8 right-4" icon="bx-chat" />

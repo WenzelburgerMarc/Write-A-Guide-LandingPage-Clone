@@ -110,12 +110,13 @@
 
             </div>
             <div class="footer-ending-container mt-5 w-full flex flex-wrap justify-between items-center">
-                <span class="text-gray-500 text-xs">© 2021 writeaguide.com</span>
+                <span class="text-gray-500 text-xs mx-1">© 2021 writeaguide.com</span>
 
-                <a class="text-gray-500 text-xs" href="https://writeaguide.com/de/about/privacy">Datenschutzerklärung</a>
-                <a class="text-gray-500 text-xs"
+                <a class="text-gray-500 text-xs mx-1"
+                    href="https://writeaguide.com/de/about/privacy">Datenschutzerklärung</a>
+                <a class="text-gray-500 text-xs mx-1"
                     href="https://writeaguide.com/de/about/terms-and-conditions">Nutzungsbedingungen</a>
-                <a class="text-gray-500 text-xs" href="https://writeaguide.com/de/about/legal-notice">Impressum</a>
+                <a class="text-gray-500 text-xs mx-1" href="https://writeaguide.com/de/about/legal-notice">Impressum</a>
             </div>
         </div>
 
