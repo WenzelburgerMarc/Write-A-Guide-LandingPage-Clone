@@ -1,6 +1,6 @@
 <template>
     <section class="pricing-cards-section relative bg-transparent">
-        <div class="absolute  top-0 left-0 w-full h-full bg-gray-500 -skew-y-6 z-10"></div>
+        <div class="absolute  top-0 left-0 w-full h-full bg-gray-200 -skew-y-6 z-10"></div>
         <default-padding>
             <div class="top-container z-20 w-full md:w-1/2 lg:w-2/3 p-4 lg:p-8 mt-12 md:text-center flex flex-col">
                 <span class="uppercase text-green-500 text-sm sm:text-sm mb-3 inline-block">{{ sectionTitle }}</span>
@@ -39,11 +39,11 @@
     </section>
 </template>
 <script setup>
-import DefaultPadding from '../layouts/DefaultPadding.vue';
+import DefaultPadding from '@/layouts/DefaultPadding.vue';
 import TheToggleButton from '@/components/TheToggleButton.vue';
-import ThePriceCard from './Cards/ThePriceCard.vue';
+import ThePriceCard from '@/components/HomePage/Cards/ThePriceCard.vue';
 import { firstPriceCard, secondPriceCard, priceSmallCompanys, priceHugeCompanys } from '@/views/HomePage/data.js';
-import NavButtonItem from './NavBar/Items/NavButtonItem.vue';
+import NavButtonItem from '@/components/NavBar/Items/NavButtonItem.vue';
 const props = defineProps({
     sectionTitle: {
         type: String,

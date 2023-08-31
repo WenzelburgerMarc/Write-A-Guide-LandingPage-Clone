@@ -19,8 +19,8 @@
     </section>
 </template>
 <script setup>
-import DefaultPadding from '../layouts/DefaultPadding.vue';
-import ThePrimaryButton from './Button/ThePrimaryButton.vue';
+import DefaultPadding from '@/layouts/DefaultPadding.vue';
+import ThePrimaryButton from '@/components/HomePage/Button/ThePrimaryButton.vue';
 </script>
 <style scoped>
 .skew-container::before {

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen overflow-hidden">
+    <div class="w-full overflow-hidden">
         <div class="hero-section w-screen flex sm:justify-center items-center sm:text-center overflow-hidden">
             <default-padding>
                 <the-hero class=" no-bottom-margin" />
@@ -101,14 +101,14 @@
 
 <script setup>
 import DefaultPadding from '@/layouts/DefaultPadding.vue';
-import TheHero from '@/components/TheHero.vue';
-import TheInfoCard from '@/components/Cards/TheInfoCard.vue';
-import TheHorizontalSection from '@/components/RadioButton/RadioButtonHorizontalSection/TheHorizontalSection.vue';
-import TheVerticalSection from '@/components/RadioButton/RadioButtonVerticalSection/TheVerticalSection.vue';
-import TheVerticalImageSection from '@/components/TheVerticalImageSection.vue';
-import TheVerticalCardsSection from '@/components/TheVerticalCardsSection.vue';
-import ThePricingCardsSection from '@/components/ThePricingCardsSection.vue';
-import TheStartNowSection from '@/components/TheStartNowSection.vue';
+import TheHero from '@/components/HomePage/TheHero.vue';
+import TheInfoCard from '@/components/HomePage/Cards/TheInfoCard.vue';
+import TheHorizontalSection from '@/components/HomePage/RadioButton/RadioButtonHorizontalSection/TheHorizontalSection.vue';
+import TheVerticalSection from '@/components/HomePage/RadioButton/RadioButtonVerticalSection/TheVerticalSection.vue';
+import TheVerticalImageSection from '@/components/HomePage/TheVerticalImageSection.vue';
+import TheVerticalCardsSection from '@/components/HomePage/TheVerticalCardsSection.vue';
+import ThePricingCardsSection from '@/components/HomePage/ThePricingCardsSection.vue';
+import TheStartNowSection from '@/components/HomePage/TheStartNowSection.vue';
 import TheFooter from '@/components/TheFooter.vue';
 import TheFixedButton from '@/components/TheFixedButton.vue';
 

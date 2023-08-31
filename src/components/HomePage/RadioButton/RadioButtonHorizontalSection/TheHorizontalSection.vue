@@ -33,7 +33,7 @@
 
 <script setup>
 import { ref, onBeforeMount } from 'vue';
-import TheRadioButton from '@/components/RadioButton/TheRadioButton.vue';
+import TheRadioButton from '@/components/HomePage/RadioButton/TheRadioButton.vue';
 
 const props = defineProps({
     sectionTitle: {

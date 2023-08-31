@@ -8,7 +8,7 @@
             <i :class="isOpen ? 'rotate-[-180deg]' : ''" class="icon bx bx-chevron-down text-xl"></i>
         </div>
         <div :class="isOpen ? '' : 'hidden'"
-            class="min-w-max nav-dropdown bg-white absolute flex flex-col top-full right-0 shadow-md p-5 rounded-md">
+            class="min-w-max nav-dropdown overflow-visible bg-white absolute flex flex-col top-full right-0 shadow-md p-5 rounded-md">
 
             <a v-for="item in props.items" :href="item.link" class="flex hover:bg-green-50 rounded-md p-3">
                 <div class="flex h-10 w-10 justify-center items-center mr-3 bg-green-200 p-2 rounded-full">

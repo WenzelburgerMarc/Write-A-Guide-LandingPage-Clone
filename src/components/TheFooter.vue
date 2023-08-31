@@ -123,7 +123,7 @@
     </section>
 </template>
 <script setup>
-import ThePrimaryButton from './Button/ThePrimaryButton.vue';
+import ThePrimaryButton from './HomePage/Button/ThePrimaryButton.vue';
 
 function goToHome() {
     window.location.href = "https://writeaguide.com/de";

@@ -1,6 +1,6 @@
 <template>
     <div
-        class="relative max-w-fit rounded-full inline-flex bg-gray-200 text-md text-gray-500 p-[0.125rem] justify-between items-start">
+        class="relative max-w-fit rounded-full inline-flex bg-gray-300 text-md text-gray-500 p-[0.125rem] justify-between items-start">
         <span @click="toggle(false)" :class="!toggleValueRef ? 'bg-white' : ''"
             class="cursor-pointer px-3 py-1 rounded-full w-full h-full">{{ props.firstTitle }}</span>
         <span @click="toggle(true)" :class="toggleValueRef ? 'bg-white' : ''"
