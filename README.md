@@ -8,3 +8,4 @@
 ### Refactoring props + layouts
 ### Data.js for props
 ### Better order for files
+### vertical rb section fix on small devices (padding beteen image+text)
