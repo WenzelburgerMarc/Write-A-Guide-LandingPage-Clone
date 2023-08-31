@@ -8,7 +8,7 @@
 
         <default-padding>
             <div class="flex justify-center items-center">
-                <img src="src/assets/writeaguide-cover.jpg" class="mb-16  w-full h-auto bg-cover bg-center rounded-md" />
+                <img src="@/assets/writeaguide-cover.jpg" class="mb-16  w-full h-auto bg-cover bg-center rounded-md" />
             </div>
         </default-padding>
 
@@ -68,7 +68,7 @@
             <the-vertical-image-section class="flex justify-center items-center" sectionTitle="Gamification"
                 titleMarked="Motiviere" title=" dein Team"
                 description="Unser Gamification-System regt zum Erstellen und Konsumieren von Wissen an. Das steigert den Wissensaustausch im Team."
-                imageSRC="/src/assets/gamification.svg" />
+                imageSRC="src/assets/gamification.svg" />
         </default-padding>
 
         <default-padding>
@@ -82,7 +82,7 @@
             <the-vertical-image-section class="flex justify-center items-center" sectionTitle="Integrationen"
                 titleMarked="Kompatibel" title=" mit deinen Tools"
                 description="Mit Schnittstellen zu beliebten Anwendungen kannst du writeaguide ganz unkompliziert in deine Arbeitswelt integrieren."
-                imageSRC="/src/assets/integrations.svg" />
+                imageSRC="src/assets/integrations.svg" />
         </default-padding>
 
         <the-pricing-cards-section class="flex justify-center items-start min-h-screen" sectionTitle="Preise"

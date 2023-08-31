@@ -1,7 +1,7 @@
 <template>
     <nav class="w-full h-full flex items-center justify-between">
         <a class="logo h-6 w-auto flex items-center flex-shrink-0" href="#">
-            <img src="../../assets/logo-white-bg.svg" alt="Logo"
+            <img src="@/assets/logo-white-bg.svg" alt="Logo"
                 class="bg-contain h-full max-h-full w-auto ml-4 flex-shrink-0" />
 
         </a>

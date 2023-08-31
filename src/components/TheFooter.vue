@@ -2,7 +2,7 @@
     <section class="footer">
         <div class="flex flex-col justify-between items-center">
             <div class="footer-header-container w-full flex justify-between items-center">
-                <img src="src/assets/logo-white-bg.svg" class="w-40 h-auto cursor-pointer" @click="goToHome" />
+                <img src="@/assets/logo-white-bg.svg" class="w-40 h-auto cursor-pointer" @click="goToHome" />
                 <div class="flex gap-5 justify-end items-center">
                     <span class="text-gray-500 text-xs hidden md:inline-block">Teste 60 Tage alle Funktionen. Keine
                         Zahlungsdaten
