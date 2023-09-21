@@ -9,4 +9,4 @@
 ### Data.js for props
 ### Better order for files
 ### vertical rb section fix on small devices (padding beteen image+text)
-### Unter Price Cards Visual Bug auf großen Displays
+### Unter Price Cards Visual Bug, needs more margin top
